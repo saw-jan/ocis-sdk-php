@@ -43,9 +43,9 @@ function exchangeTokens(){
 // GET '/post_connection'
 function postConnection(){
     $tokens = $_SESSION['tokens'];
-    $idToken = $tokens['id_token'];
-    $accessToken = $tokens['access_token'];
-    $refreshToken = $tokens['refresh_token'];
+    $idToken = $tokens->id_token;
+    $accessToken = $tokens->access_token;
+    $refreshToken = $tokens->refresh_token;
 
     // different instance of OcisSdk
     $ocis = getOcisSdk();

@@ -57,10 +57,7 @@ class Ocis {
 
     function exchangeTokens(){
         $this->oidc->authenticate();
-        $tokens["id_token"] = $this->oidc->getIdToken();
-        $tokens["access_token"] = $this->oidc->getAccessToken();
-        $tokens["refresh_token"] = $this->oidc->getRefreshToken();
-        return $tokens;
+        return $this->oidc->getTokenResponse();
     }
 
     function initWithAuth($token){
@@ -69,13 +66,10 @@ class Ocis {
 
     function refreshTokens($refreshToken){
         $this->oidc->refreshToken($refreshToken);
-        $tokens["id_token"] = $this->oidc->getIdToken();
-        $tokens["access_token"] = $this->oidc->getAccessToken();
-        $tokens["refresh_token"] = $this->oidc->getRefreshToken();
+        $response = $this->oidc->getTokenResponse();
+        $this->initWithAuth($response->access_token);
 
-        $this->initWithAuth($tokens["access_token"]);
-
-        return $tokens;
+        return $response;
     }
 }
 ?>
