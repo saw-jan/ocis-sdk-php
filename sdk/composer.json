@@ -1,0 +1,20 @@
+{
+  "name": "sawjan/ocis-sdk-php",
+  "version": "0.0.1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sawjan Gurung",
+      "email": "saw.jan.grg3e@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Sawjan\\OcisSdk\\": "src/"
+    }
+  },
+  "require": {
+    "jumbojett/openid-connect-php": "^0.9.10",
+    "guzzlehttp/guzzle": "^7.0"
+  }
+}
