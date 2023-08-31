@@ -12,7 +12,7 @@ function getOcisSdk(){
         "ocis_url" => "https://localhost:9200",
         // ocis "web" client doesn't work out of the box
         // need to create a new oidc client that works without secret (with PKCE)
-        // Using Desktop client id for now
+        // Using custom sdk client for now
         "client_id" => "sdk",
         "client_secret" => "UBntmLjC2yYCeHwsyj73Uwo9TAaecAetRwMw0xYcvNL9yRdLSUi0hUAHfvCHFeFh",
         "redirect_uri" => "http://localhost:9000/silent_oidc_callback"
