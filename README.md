@@ -11,3 +11,11 @@ See [test-client](./test-client/) for usage/installation example.
 ```bash
 git clone --single-branch -depth 1 -b sdk-client git@github.com:saw-jan/ocis.git
 ```
+
+### Start Client
+
+```bash
+make serve
+```
+
+Client serves on [localhost:9000](http://localhost:9000)
