@@ -1,0 +1,25 @@
+{
+  "name": "sawjan/testclient",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Saw-jan",
+      "email": "saw.jan.grg3e@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Sawjan\\TestClient\\": "./"
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../sdk"
+    }
+  ],
+  "require": {
+    "sawjan/ocis-sdk-php": "^0.0.1"
+  }
+}
