@@ -1,3 +1,5 @@
+# :exclamation: Sample Only :exclamation:
+
 ## ocis-sdk-php
 
 PHP SDK for ownCloud Infinite Scale.
